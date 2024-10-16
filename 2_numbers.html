@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        console.log('un número es de tipo', typeof 8)
+
+
+
+        // NaN numeric value
+        const age = 33
+        const wrong = age * 'german'
+
+        console.log(`Una operación incongruenete resulta en ${wrong}`)
+
+
+
+
+        // Module operator
+        const rest = 10 % 5
+        console.log(`El resto de dividir 10 entre 5 es ${rest}`)
+
+        if (rest === 0) {
+            console.log('10 es múltiplo de 5')
+        } else {
+            console.log('10 NO es múltiplo de 5')
+        }
+
+
+
+
+
+        // Assignment operator
+        let value = 22
+        value += 10           // value = value + 10
+        console.log(value)
+
+
+
+        // Unit increment
+        value++               // value = value + 1
+        console.log(value)
+
+
+
+        // Operators range (PEMDAS)
+        const result = 10 + 2 * 3
+        console.log(result)
+
+
+
+
+        console.log('------')
+
+
+
+        // Number methods:
+        const anyNumber = 5.679345
+
+        const floored = Math.floor(anyNumber)
+        const rounded = Math.round(anyNumber)
+        const ceil = Math.ceil(anyNumber)
+        const fixedString = anyNumber.toFixed(1)          // retorna un string
+
+        console.log(floored)
+        console.log(rounded)
+        console.log(ceil)
+        console.log(fixedString)
+
+
+        console.log('------')
+
+
+        // Number conversion
+        console.log('Inicialmente es', typeof fixedString)
+        console.log('Ahora es', typeof +fixedString)
+
+        console.log('Inicialmente es', typeof fixedString)
+        console.log('Ahora es', typeof Number(fixedString))
+
+
+        console.log('------')
+
+
+        // Número aleatorio
+        console.log(Math.random())
+        console.log(Math.random())
+        console.log(Math.random())
+        console.log(Math.random())
+        console.log(Math.random())
+
+
+
+
+    </script>
+</body>
+
+</html>
